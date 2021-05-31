@@ -15,6 +15,7 @@ const db = new JsonDB(new Config('myDatabase', true, false, '/'))
 app.get('/api', (req, res) => res.json({ message : 'welcome to the two factor authentication example'}))
 
 //register user + create temp secret
+//this is updated stuff
 app.post('/api/register', (req, res) => {
     const id = uuid.v4()
     
